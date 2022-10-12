@@ -20,13 +20,10 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   background-color: #fff;
   color: #333;
-  cursor:none;
+  cursor:url(../img/cur.cur),auto;
+  
 }
 
-
-html{cursor: url(../img/cur.cur), auto;}
-
-  
 
 
 
