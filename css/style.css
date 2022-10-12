@@ -20,12 +20,16 @@ body {
   font-family: 'Noto Sans KR', sans-serif;
   background-color: #fff;
   color: #333;
+  cursor:url(../img/cur.cur),auto;
+  
 }
 
 
 
+
+
 div.port_1 {
-  width: 100%; height:938px;
+  width: 100%; height:940px;
   position: relative;
   overflow: hidden;
 }
@@ -82,12 +86,12 @@ div.port_1 div.box_bl{
 }
 div.port_1 div.box_bl h1{
   width: 800px;
-  padding:130px 220px;
+  padding:150px 220px;
   font-size: 80px;
   position: absolute;
 }
 div.port_1 div.box_bl p{
-  margin:280px 0px 0px 120px;
+  margin:180px 0px 0px 120px;
   font-size: 20px;
   
 }
@@ -98,7 +102,8 @@ div.port_1 div.box_bl p{
 
 
 div.port_2 {
-  width: 100%;height:938px;
+  width: 100%;height:940px;
+  
   position: relative;
   overflow: hidden;
 }
@@ -154,19 +159,19 @@ div.port_2 div.box_bl {
 div.port_2 h2 {
   font-size: 90px;
   text-align: center;
-  padding-top: 70px;
+  padding-top: 120px;
   position: relative;
 }
 
 div.port_2 p > img {
   width: 230px;
   float: left;
-  margin:120px 160px 100px 75px;
+  margin:80px 160px 100px 75px;
   
 }
 div.port_2 div.box_b3 {
   float: left;
-  margin-top:150px;
+  margin-top:80px;
   margin-right: 120px;
   line-height: 3;
   font-weight: bold;
@@ -174,7 +179,7 @@ div.port_2 div.box_b3 {
 }
 div.port_2 div.box_b4 {
   float: left;
-  margin-top:150px;
+  margin-top:80px;
   line-height: 3;
   font-weight: bold;
   font-size: 18px;
@@ -185,8 +190,12 @@ div.port_2 div.box_b4 {
 
 
 div.port_3 {
-  width: 100%;height:938px;
+  width: 100%;
   background: rgb(245, 187, 196,.1);
+
+}
+div.port_3::after{
+  content: ""; display: block; clear: both;
 
 }
 
@@ -208,28 +217,184 @@ div.port_3 div.box_bl p span {
   color: rgb(255, 198, 215);
 }
 
-div.port_3 div.box_b2 {
-  width:1200px;
+
+
+
+div.port_3 div.box_b2  {
+  width:1200px; 
   margin: 0 auto;
   
 }
-div.port_3 div.box_b2 p> img {
+div.port_3 div.box_b2 div.skill {
+  width:1100px; height: 140px;
   margin: 0 auto;
-  padding-top:120px;
-  width:860px;
-  display: block;
+  outline: 1px solid red;
   
+}
+div.port_3 div.box_b2 div.skill p{
+  float: left;
+  cursor : pointer;
+}
+div.port_3 div.box_b2 div.skill p:not(:nth-child(1)){
+  padding-left: 20px;
+}
+
+div.port_3 div.box_b2 div.skill p img  {
+  width:100px;
+  
+}
+div.port_3 div.box_b2  {
+  width: 100%; height:940px;
+  position: relative;
+  overflow: hidden;
 }
 
 
+/* statistics start */
+.graph{
+  background-color:#faedf4;
+  height: 100vh;
+  border-radius: 20px;
+  margin:50px;
+}
+@keyframes stack{
+  0%{ height: 0; opacity:0;}
+  100%{ height: 90%; opacity:1;}
+}
+@keyframes stack2{
+  0%{ height: 0; opacity:0;}
+  100%{ height: 90%; opacity:1;}
+}
+@keyframes stack3{
+  0%{ height: 0; opacity:0;}
+  100%{ height: 95%; opacity:1;}
+}
+@keyframes stack4{
+  0%{ height: 0; opacity:0;}
+  100%{ height: 80%; opacity:1;}
+}
+@keyframes stack5{
+  0%{ height: 0; opacity:0;}
+  100%{ height: 85%; opacity:1;}
+}
+@keyframes stack6{
+  0%{ height: 0; opacity:0;}
+  100%{ height: 85%; opacity:1;}
+}
+@keyframes stack7{
+  0%{ height: 0; opacity:0;}
+  100%{ height: 95%; opacity:1;}
+}
+
+section{
+  display:flex;  
+/*   flex-direction:column;   */
+  justify-content:center;
+  margin-top:60px;
+  height: 500px;
+  transform:rotate(180deg);
+}
+
+.graph {
+  height:400px;
+}
+
+.graph span{
+  display:flex;
+  height:40px;
+  line-height:40px;
+  text-align:right;
+  /*   width: 75%; */
+  /*   background-color:pink; */
+  border-radius: 40px;
+  padding: 0 10px;
+  box-sizing: border-box;
+  color:white;
+  transform:rotate(180deg);
+  
+}
+.graph.stack1 span{
+  background-color:#ffb3c6;
+  height:90%;
+  animation:stack 10s 1;
+}
+
+.graph.stack2 span{
+  background-color:#ffb3c6;
+  height:90%;
+  animation:stack2 10s 1;
+}
+.graph.stack3 span{
+  background-color:#ffb3c6;
+  height:95%;
+  animation:stack3 10s 1;
+}
+.graph.stack4 span{
+  background-color:#ffb3c6;
+  height:80%;
+  animation:stack4 10s 1;
+}
+.graph.stack5 span{
+  background-color:#ffb3c6;
+  height:85%;
+  animation:stack5 10s 1;
+}
+.graph.stack6 span{
+  background-color:#ffb3c6;
+  height:85%;
+  animation:stack6 10s 1;
+}
+.graph.stack7 span{
+  background-color:#ffb3c6;
+  height:95%;
+  animation:stack7 10s 1;
+}
+/* statistics end */
 
 
 
+div.port_3 div.g_text {
+  width:1000px;
+  margin: 0 auto;
+}
+div.port_3 div.g_text hr{
+  margin-bottom: 10px;
+  background: pink;
+  height: 2px;
+  border:0;
+}
+div.port_3 div.g_text p{
+  float: left;
+  font-weight: bold;
+  font-size: 22px;
+  color:palevioletred;
+}
+div.port_3 div.g_text p:nth-child(2){
+  padding-left:15px;
+}
+div.port_3 div.g_text p:nth-child(3){
+  padding-left:95px;
+}
+div.port_3 div.g_text p:nth-child(4){
+  padding-left:120px;
+}
+div.port_3 div.g_text p:nth-child(5){
+  padding-left:127px;
+}
+div.port_3 div.g_text p:nth-child(6){
+  padding-left:126px;
+}
+div.port_3 div.g_text p:nth-child(7){
+  padding-left:130px;
+}
+div.port_3 div.g_text p:nth-child(8){
+  padding-left:130px;
+}
 
 
 
 div.port_4 {
-  height: 938px;
+  height: 940px;
   width: 100%;
   margin:0 auto;
   position: relative;
@@ -272,7 +437,7 @@ div.port_4 {
   z-index: 9;
   transition: 12s linear;
   width:800px;
-  
+  cursor : pointer;
 }
 .port_4 .pp_img .img-box:hover .hover-img{
   background-position: center bottom;
@@ -314,7 +479,7 @@ font-size:13px;line-height:40px;font-weight:500;transition:0.5s;}
 
 
 div.port_5 {
-  height: 938px;
+  height: 940px;
   width: 100%;
   margin:0 auto;
   position: relative;
@@ -357,7 +522,7 @@ div.port_5 {
   z-index: 9;
   transition: 12s linear;
   width:800px;
-  
+  cursor : pointer;
 }
 .port_5 .pp_img .img-box:hover .hover-img{
   background-position: center bottom;
@@ -397,7 +562,7 @@ font-size:13px;line-height:40px;font-weight:500;transition:0.5s;}
 
 
 div.port_6 {
-  height: 938px;
+  height: 940px;
   width: 100%;
   margin:0 auto;
   position: relative;
@@ -440,7 +605,7 @@ div.port_6 {
   z-index: 9;
   transition: 12s linear;
   width:800px;
-  
+  cursor : pointer;
 }
 .port_6 .pp_img .img-box:hover .hover-img{
   background-position: center bottom;
@@ -592,8 +757,9 @@ footer div.foot_address {
   padding-left: 5px;
   margin-top:30px;
   line-height: 40px;
-  
   float: left;
   width: 220px; height:40px;
 }
+
+
 
