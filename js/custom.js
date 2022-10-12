@@ -22,10 +22,6 @@ $("document").ready(function(){
     })
 
 
-
-
-
-
-
+  
 
 })
